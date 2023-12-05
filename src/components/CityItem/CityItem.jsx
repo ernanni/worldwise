@@ -1,3 +1,4 @@
+//import { convertToEmoji } from '../../utils';
 import styles from './CityItem.module.css';
 
 const formatDate = (date) =>
