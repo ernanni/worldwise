@@ -1,6 +1,7 @@
 import AppNav from './AppNav/AppNav';
 import City from './City/City';
 import CountryItem from './CountryItem/CountryItem';
+import CountryList from './CountryList/CountryList';
 import Footer from './Footer/Footer';
 import Form from './Form/Form';
 import Logo from './Logo/Logo';
@@ -16,6 +17,7 @@ export {
   AppNav,
   City,
   CountryItem,
+  CountryList,
   Footer,
   Form,
   Logo,
