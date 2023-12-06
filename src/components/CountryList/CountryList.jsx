@@ -1,6 +1,6 @@
-import CountryItem from '../CountryItem/CountryItem';
-import Message from '../Message/Message';
-import Spinner from '../Spinner/Spinner';
+import CountryItem from '../CountryItem';
+import Message from '../Message';
+import Spinner from '../Spinner';
 import styles from './CountryList.module.css';
 
 function CountryList({ cities, isLoading }) {

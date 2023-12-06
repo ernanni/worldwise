@@ -1,17 +1,17 @@
-import AppNav from './AppNav/AppNav';
-import City from './City/City';
-import CountryItem from './CountryItem/CountryItem';
-import CountryList from './CountryList/CountryList';
-import Footer from './Footer/Footer';
-import Form from './Form/Form';
-import Logo from './Logo/Logo';
-import Map from './Map/Map';
-import Message from './Message/Message';
-import PageNav from './PageNav/PageNav';
-import Sidebar from './Sidebar/Sidebar';
-import Spinner from './Spinner/Spinner';
-import SpinnerFullPage from './SpinnerFullPage/SpinnerFullPage';
-import User from './User/User';
+import AppNav from './AppNav';
+import City from './City';
+import CountryItem from './CountryItem';
+import CountryList from './CountryList';
+import Footer from './Footer';
+import Form from './Form';
+import Logo from './Logo';
+import Map from './Map';
+import Message from './Message';
+import PageNav from './PageNav';
+import Sidebar from './Sidebar';
+import Spinner from './Spinner';
+import SpinnerFullPage from './SpinnerFullPage';
+import User from './User';
 
 export {
   AppNav,
