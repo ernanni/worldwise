@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
   AppLayout,
@@ -9,8 +10,7 @@ import {
   Pricing,
   Product,
 } from './pages';
-import { CountryList } from './components';
-import { useEffect, useState } from 'react';
+import { City, CountryList, Form } from './components';
 
 const BASE_URL = 'http://localhost:8000';
 
@@ -53,10 +53,14 @@ function App() {
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
           <Route
+            path="cities/:id"
+            element={<City cities={cities} isLoading={isLoading} />}
+          />
+          <Route
             path="countries"
             element={<CountryList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="form" element={<p>Form</p>} />
+          <Route path="form" element={<Form />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
