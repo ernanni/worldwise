@@ -1,5 +1,10 @@
 # React + Vite
 
+## To run this app and the server proceed with two terminals
+
+- 1: npm run/yarn dev
+- 2: npm run/yarn server
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
