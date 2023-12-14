@@ -1,7 +1,7 @@
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
     .toUpperCase()
-    .Array.from(codePoints)
+    .split('')
     .map((char) => 127397 + char.charCodeAt());
   return String.fromCodePoint(...codePoints);
 }

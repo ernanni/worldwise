@@ -11,21 +11,18 @@ import {
   useMapEvent,
 } from 'react-leaflet';
 import { useCities } from '../../contexts';
-import { useGeolocation } from '../../hooks/useGeolocation';
+import { useGeolocation, useUrlPosition } from '../../hooks';
 import Button from '../Button';
 
 function Map() {
   const { cities } = useCities();
   const [position, setPosition] = useState([40, 0]);
-  const [searchParams] = useSearchParams();
   const {
     isLoading: isLoadingLocation,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
-
-  const mapLat = searchParams.get('lat');
-  const mapLng = searchParams.get('lng');
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
     if (mapLat && mapLng) setPosition([mapLat, mapLng]);
