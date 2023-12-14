@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Sao Paulo",
-      "country": "Brazil",
-      "emoji": "🇧🇷",
-      "date": "2023-12-14T04:15:27.964Z",
-      "notes": "hometown",
-      "position": {
-        "lat": "-23.718411110702377",
-        "lng": "-46.697044372558594"
-      },
-      "id": 98443198
-    },
-    {
       "cityName": "Amerzgane",
       "country": "Morocco",
       "emoji": "🇲🇦",
@@ -49,18 +37,6 @@
       "id": 98443201
     },
     {
-      "cityName": "Nueve de Julio",
-      "country": "Argentina",
-      "emoji": "🇦🇷",
-      "date": "2023-12-14T04:34:26.082Z",
-      "notes": "",
-      "position": {
-        "lat": "-35.42486791930557",
-        "lng": "-60.64453125000001"
-      },
-      "id": 98443202
-    },
-    {
       "cityName": "Tunuyan",
       "country": "Argentina",
       "emoji": "🇦🇷",
@@ -83,6 +59,18 @@
         "lng": "-71.71875000000001"
       },
       "id": 98443204
+    },
+    {
+      "cityName": "Sao Paulo",
+      "country": "Brazil",
+      "emoji": "🇧🇷",
+      "date": "2023-12-14T07:12:03.357Z",
+      "notes": "Autodromo",
+      "position": {
+        "lat": "-23.703165532796696",
+        "lng": "-46.6973876953125"
+      },
+      "id": 98443205
     }
   ]
 }
