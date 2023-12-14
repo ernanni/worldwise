@@ -53,7 +53,23 @@ function CitiesProvider({ children }) {
 
       setCities((cities) => [...cities, data]);
     } catch (error) {
-      alert('There was an error loading data...');
+      alert('There was an error saving the city');
+      console.error(`Please verify if you're runnin the JSON Server`);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: 'DELETE',
+      });
+
+      setCities((cities) => cities.filter((city) => city.id !== id));
+    } catch (error) {
+      alert('There was an error deleting city');
       console.error(`Please verify if you're runnin the JSON Server`);
     } finally {
       setIsLoading(false);
@@ -68,6 +84,7 @@ function CitiesProvider({ children }) {
         currentCity,
         getCity,
         createCity,
+        deleteCity,
       }}
     >
       {children}
