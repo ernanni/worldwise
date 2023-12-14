@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styles from './Form.module.css';
 import 'react-datepicker/dist/react-datepicker.css';
 
